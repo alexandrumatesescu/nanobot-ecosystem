@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "agent_id": "nanobot-local-mac",
+  "agent_type": "local",
+  "platform": "darwin",
+  "capabilities": [
+    "desktop_automation",
+    "file_management",
+    "git_operations",
+    "code_review",
+    "local_ai_processing",
+    "screenshot",
+    "applescript"
+  ],
+  "mcp_servers": {
+    "sequential-thinking": {
+      "command": "node",
+      "args": ["/usr/local/lib/node_modules/@modelcontextprotocol/server-sequential-thinking/dist/index.js"]
+    },
+    "filesystem": {
+      "command": "node",
+      "args": ["/usr/local/lib/node_modules/mcp-server-filesystem/dist/index.js", "/Users/vision42"]
+    }
+  },
+  "sync": {
+    "github_repo": "nanobot-ecosystem",
+    "sync_interval_seconds": 300,
+    "sync_paths": [
+      "~/nanobot-ecosystem/data",
+      "~/nanobot-ecosystem/logs",
+      "~/nanobot-ecosystem/sync"
+    ]
+  },
+  "workspace": "/Users/vision42/nanobot-ecosystem"
+}
