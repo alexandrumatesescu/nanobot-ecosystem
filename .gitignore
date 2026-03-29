@@ -1,0 +1,10 @@
+config/.env
+config/*.env
+*.env
+.env*
+data/local_agent.db
+logs/
+*.log
+__pycache__/
+*.pyc
+.DS_Store
